@@ -1,0 +1,63 @@
+create database VesteBem;
+
+use VesteBem;
+
+==================================================
+
+create table Blusa (
+cod int not null,
+nome varchar(30) NOT NULL,
+descrição varchar(100),
+tamanho enum ("P", "M", "G") NOT NULL,
+quantidade int NOT NULL,
+PRIMARY KEY (cod)
+);
+
+create table Camisa (
+cod int not null,
+nome varchar(30) NOT NULL,
+descrição varchar(100),
+tamanho enum ("P", "M", "G") NOT NULL,
+quantidade int NOT NULL,
+PRIMARY KEY (cod)
+);
+
+create table Calca (
+cod int not null,
+nome varchar(30) NOT NULL,
+descrição varchar(100),
+tamanho enum ("P", "M", "G") NOT NULL,
+quantidade int NOT NULL,
+PRIMARY KEY (cod)
+);
+
+create table Tenis (
+cod int not null,
+nome varchar(30) NOT NULL,
+descrição varchar(100),
+tamanho int NOT NULL,
+quantidade int NOT NULL,
+PRIMARY KEY (cod)
+);
+
+========================================================
+/*Codigo blusa 1
+  Codigo camisa 2
+  Codigo calça 3
+  Codigo tenis 4*/
+
+#Blusa#
+Insert into Blusa (cod, nome, descrição, tamanho, quantidade)
+values (11, "Blusa Preto", "Camisa cara mas é boa", 'P', 10)
+
+#Camisa#
+Insert into Camisa (cod, nome, descrição, tamanho, quantidade)
+values (21, "Camisa Aberta", "Camisa com estampa florida", 'P', 14)
+
+#Calça#
+Insert into Calca (cod, nome, descrição, tamanho, quantidade)
+values (31, "Calça Restart", "É uma calça azul estilo 2010!", 'P', 19)
+
+#Tenis#
+Insert into Tenis (cod, nome, descrição, tamanho, quantidade)
+values (41, "Tênis casual slip", "É um tênis rosa!", 40, 9)
